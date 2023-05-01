@@ -1,0 +1,25 @@
+@import '../utilities/mixins';
+
+
+.h-100 {
+  @include detrasNav;
+
+
+  @media (max-width: 600px) {
+
+    .img-fluid {
+      max-height: 100px;
+      object-fit: contain;
+    }
+    .h-100 {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 801px) and (max-width: 1000px) {
+    .img-fluid {
+      max-height: 200px;
+      object-fit: contain;
+    }
+  }
+}

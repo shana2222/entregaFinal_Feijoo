@@ -1,0 +1,45 @@
+@import '../utilities/variables';
+@import '../utilities/map';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+body {
+  background-color: $color-bisque;
+  overflow-x: hidden;
+
+  h1 {
+    font-family: $font-family;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
+  }
+
+  a {
+    color: $color-black;
+    font-weight: $font-weight-bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 2rem;   
+    li{
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
+    }     
+  }
+
+  li:hover{
+    border-radius: 5px;
+    text-decoration:  solid;
+    background-color: rgba(137, 43, 226, 0.157);    
+    box-shadow:  1px 1px 1px rgba(0, 0, 0, 0.397);
+    color: royalblue;   
+  }
+
+  .cabecera{
+    a{      
+     
+    }
+  }
+}

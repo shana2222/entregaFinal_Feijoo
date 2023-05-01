@@ -1,0 +1,48 @@
+@import '../utilities/map';
+@import '../utilities/variables';
+
+// Header - menú de navegación
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-light-pink;
+    background-color: map-get($colors, "primary"); // Utiliza un color del mapa  
+    z-index: 100;
+    padding: 30px 0px;
+
+    .navbar-light{
+        background-color: blueviolet;
+    }
+}
+
+.cabecera {
+    background-color: $color-cornsilk;
+    position: sticky;
+
+    top: 0px;
+    height: 100px;
+
+    .navbar {
+        height: 80px;
+        /* altura del navbar */
+    }
+
+    .logo-wrapper {
+        height: 100%;
+
+        /* altura del contenedor del logo */
+        #cabecera__top {
+            max-height: 70%;
+            /* altura máxima de la imagen en relación con la altura del contenedor */
+            max-width: 150px;
+            
+        }
+    }
+    .navbar-dark .nav-link {
+        color: $color-silver; // Utiliza variables
+    }
+
+
+
+}

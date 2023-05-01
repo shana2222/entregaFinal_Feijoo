@@ -1,0 +1,50 @@
+@import '../utilities/mixins';
+@import '../base/reset';
+
+
+#carouselExampleIndicators {
+  margin: 0 auto;
+  min-width: 50%;
+  max-width: 70%;
+  background-color: #f8f9fa;
+  color: #343a40;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+}
+
+// Definimos las propiedades de la perspectiva del contenedor de las tarjetas
+.card-flip {
+  perspective: 1000px;
+
+  // Definimos la transición y la visibilidad de las caras de las tarjetas
+  .card-front,
+  .card-back {
+    transition: transform 0.6s ease-in-out;
+    backface-visibility: hidden;
+  }
+
+  // Definimos las propiedades de la cara trasera de la tarjeta
+  .card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  // Definimos las propiedades que se aplicarán cuando se haga hover en el contenedor de la tarjeta
+  &:hover {
+
+    // Giramos la cara delantera 180 grados
+    .card-front {
+      transform: rotateY(180deg);
+    }
+
+    // Giramos la cara trasera 180 grados (para mostrarla)
+    .card-back {
+      transform: rotateY(0deg);
+    }
+  }
+}

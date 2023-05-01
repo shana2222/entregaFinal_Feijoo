@@ -1,0 +1,30 @@
+/*Inicio estilados banner con video banner/bg */
+
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+}
+
+.sect {
+    width: 100%;
+    min-height: 500px;
+}
+
+#sect1,
+#sect3 {
+    color: #e6dcdc;
+}
+
+#sect2 {
+    background-color: #dddddd7d;
+    color: #e4e0e0;
+
+}
+
+/* Sección de cursos */
